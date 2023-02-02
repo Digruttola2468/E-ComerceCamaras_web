@@ -119,6 +119,70 @@ section {
     color: #003F62;
 }
 
+/**/
+
+.main-container-oferta {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+}
+
+.oferta-about {
+
+}
+
+.oferta-about h1 {
+    color: #1B5A7D;
+    font-weight: 700;
+    line-height: 65px;
+}
+
+.oferta-button-shop-now {
+    width: 144px;
+    height: 61px;
+    color: #fff;
+    background-color: #EDA415;
+    border-radius: 20px;
+    padding: 10px;
+    border: none;
+    margin-right: 20px;
+}
+.oferta-button-view-more {
+    width: 144px;
+    height: 61px;
+    color: #316887;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 10px;
+    border: 1px solid #316887;
+}
+
+.oferta-imagen {
+    position: relative;
+    width: 360px;
+}
+
+.oferta-imagen img {
+    width: 100%;
+}
+
+.oferta-imagen div {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #EDA415;
+    width: 90px;
+    height: 90px;
+    top: calc(100% - 150px);
+    left: calc(100% - 100px);
+}
+.oferta-imagen label {
+    color: #fff;
+}
+
 @media (max-width: 860px) {
     .products-container {
         grid-template-columns: 1fr 1fr 1fr;
