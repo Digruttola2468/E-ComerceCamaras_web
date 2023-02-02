@@ -204,6 +204,57 @@ section {
     margin-right: 10px;
 }
 
+/**/
+
+.main-container-saleOff {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-image: url("./assets/img/computerBackground.png");
+    background-size: cover;
+    border-radius: 20px;
+    text-align: right;
+
+    margin-bottom: 50px;
+}
+
+.saleOff-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+}
+
+.saleOff-item h3 {
+    font-weight: 700;
+    font-size: 41px;
+    line-height: 62px;
+    color: #2E8FC5;
+    margin: 0;
+    margin-top: 30px;
+}
+
+.saleOff-item p {
+    text-align: center;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #fff;
+    margin: 0;
+}
+
+.main-container-saleOff button {
+    width: 144px;
+    height: 45px;
+    color: #fff;
+    background-color: #EDA415;
+    border-radius: 20px;
+    padding: 10px;
+    border: none;
+    margin-right: 20px;
+    margin-top: 30px;
+}
+
 @media (max-width: 860px) {
     .products-container {
         grid-template-columns: 1fr 1fr 1fr;
