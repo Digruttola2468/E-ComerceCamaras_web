@@ -1,0 +1,151 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+.menu-container {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-around;
+    align-items: center;
+    background-color: #003F62;
+
+    padding: 10px 0px;
+}
+
+.menu-item-logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-item-logo img {
+    margin-right: 30px;
+}
+
+.menu-item-logo button {
+    background: none;
+}
+
+.material-symbols-outlined {
+    display: none;
+    color: white;
+}
+
+.menu-item-search {
+    position: relative;
+}
+
+.menu-item-search input,button{
+    border: none;
+    outline: none;
+    border-radius: 8px;
+}
+
+.menu-item-search input[type="text"]{
+    height: 36px;
+    padding: 0px 25px;
+}
+
+.menu-item-search button {
+    position: absolute;
+    height: 36px;
+
+    background-color: #EDA415;
+    left: calc(100% - 10px);
+}
+
+.menu-item-search button:hover {
+    cursor: pointer;
+}
+
+.menu-items-account a {
+    text-decoration: none;
+    color: #fff;
+
+    padding: 0px 20px 0px 0px;
+}
+
+.menu-items-account ul{
+    display: flex;
+    flex-direction: row;
+    
+    list-style: none;
+}
+
+.menu-items-account a {
+    display: flex;
+    align-items: center;
+}
+
+
+/**/
+
+section {
+    padding-top: 50px;
+    max-width: 930px;
+    margin: 0 auto;
+}
+
+.products-container {
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+
+    gap: 20px;
+}
+
+.product-item {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+
+    outline: 1px solid rgb(209 209 209);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.product-item img {
+    width: 100%;
+    opacity: 60%;
+}
+.product-item img:hover {
+    opacity: 80%;
+}
+
+.product-info p{
+    margin: 0px;
+    margin-bottom: 10px;
+    color: #003F62;
+}
+
+@media (max-width: 860px) {
+    .products-container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media (max-width: 360px) {
+    .products-container {
+        grid-template-columns: 150px 150px;
+        place-content: center;
+    }
+    .product-item img {
+        opacity: 80%;
+    }
+}
+
+/**/
+@media (max-width: 710px) {
+    .material-symbols-outlined {
+        display: block;
+    }
+    .menu-container {
+        justify-content: flex-start;
+    }
+    .menu-item-search {
+        display: none;
+    }
+    .menu-items-account {
+        display: none;
+    }
+}
