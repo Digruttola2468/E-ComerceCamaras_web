@@ -128,10 +128,6 @@ section {
     justify-content: space-between;
 }
 
-.oferta-about {
-
-}
-
 .oferta-about h1 {
     color: #1B5A7D;
     font-weight: 700;
@@ -181,6 +177,31 @@ section {
 }
 .oferta-imagen label {
     color: #fff;
+}
+
+/**/
+
+.main-container-popularProducts {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-container-popularProducts h2 {
+    color: #1B5A7D;
+    line-height: 41px;
+}
+
+.main-container-popularProducts div button {
+    width: 139px;
+    height: 45px;
+    color: #1B5A7D;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 10px;
+    border: 1px solid #003F62;
+    margin-right: 10px;
 }
 
 @media (max-width: 860px) {
