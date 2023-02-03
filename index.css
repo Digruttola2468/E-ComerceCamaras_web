@@ -87,13 +87,13 @@ main {
 
 section {
     padding-top: 50px;
-    max-width: 930px;
+    max-width: 1400px;
     margin: 0 auto;
 }
 
 .products-container {
     display: grid;
-    grid-template-columns: 200px 200px 200px 200px;
+    grid-template-columns: repeat(auto-fit, 200px);
     place-content: center;
     gap: 20px;
 }
@@ -300,6 +300,21 @@ section {
 }
 .item-beneficios-title {
     font-weight: bold;
+}
+
+/**/
+
+.main-container-sponsor {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px 30px 0px 30px;
+    background-color: #E2F4FF;
+}
+.main-container-sponsor img{
+    margin-bottom: 30px;
 }
 
 @media (max-width: 860px) {
