@@ -317,34 +317,6 @@ section {
     margin-bottom: 30px;
 }
 
-@media (max-width: 860px) {
-    .products-container {
-        grid-template-columns: repeat(auto-fit, 200px);
-    }
-    .main-container-popularProducts h2 {
-        display: none;
-    }
-    .main-container-popularProducts div{
-        text-align: center;
-    }
-}
-
-@media (max-width: 710px) {
-    .material-symbols-outlined {
-        display: block;
-    }
-    .menu-container {
-        justify-content: flex-start;
-    }
-    .menu-item-search {
-        display: none;
-    }
-    .menu-items-account {
-        display: none;
-    }
-    
-}
-
 /**/
 
 .main-container-comentarios {
@@ -393,6 +365,126 @@ section {
     color: #003F62;
 }
 
+/**/
+
+.footer-container {
+    background-color: #E2F4FF;
+    padding: 10px;
+}
+.footer-subscribe {
+
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-around;
+    align-items: center;
+
+    border-radius: 20px;
+
+    height: 140px;
+
+    padding: 5px;
+}
+.sendContact-input {
+    position: relative;
+}
+.footer-subscribe input {
+    display: block;
+    background: #EDA415;
+    border-radius: 20px;
+    border: none;
+
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+
+    color: #FFFFFF;
+
+    padding: 10px 20px;
+
+}
+.footer-subscribe input:focus {
+    outline: none;
+}
+.footer-subscribe input::placeholder {
+    color: #FFFFFF;
+}
+.subscribe-newsLetter {
+    font-weight: 700;
+    font-size: 29.38px;
+    line-height: 44px;
+
+    margin: 10px;
+
+    color: #1B5A7D;
+}
+.footer-sendContact {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.footer-sendContact button{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    padding: 0px;
+    background-color: #EDA415;
+    left: calc(100% - 35px);
+    top: calc(100% - 32px);
+}
+.icon-send {
+    display: block;
+    background-image: url("./assets/img/send_FILL0_wght400_GRAD0_opsz48.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    
+}
+.subscribe-infoContact {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.footer-info {
+    
+}
+@media (max-width: 860px) {
+    .products-container {
+        grid-template-columns: repeat(auto-fit, 200px);
+    }
+    .main-container-popularProducts h2 {
+        display: none;
+    }
+    .main-container-popularProducts div{
+        text-align: center;
+    }
+    .footer-subscribe {
+        flex-direction: column;
+        height: auto;
+    }
+}
+
+@media (max-width: 710px) {
+    .material-symbols-outlined {
+        display: block;
+    }
+    .menu-container {
+        justify-content: flex-start;
+    }
+    .menu-item-search {
+        display: none;
+    }
+    .menu-items-account {
+        display: none;
+    }
+    
+}
 
 @media (max-width: 560px) {
     .main-container-comentarios {
@@ -409,6 +501,16 @@ section {
     }
     .main-container-beneficios {
         align-items: center;
+    }
+}
+
+@media (max-width: 490px) {
+    .footer-sendContact{
+        flex-direction: column;
+    }
+    .subscribe-newsLetter {
+        font-size: 25px;
+        line-height: 44px;
     }
 }
 
