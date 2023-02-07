@@ -272,6 +272,48 @@ section {
 
 /**/
 
+.main-container-products {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 5px    ;
+}
+.main-container-products div div p {
+    font-weight: 600;
+    font-size: 21.09px;
+    line-height: 32px;
+
+    color: #003F62;
+}
+.product-principal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5px;
+
+    border: 1px solid #B6B6B6;
+    border-radius: 20px;
+    grid-area: 1 / 1 / 3 / 3;
+}
+.product-principal img{
+    max-width: 340px;
+    border-radius: 20px;
+}
+.product-secundario {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+
+    border: 1px solid #B6B6B6;
+    border-radius: 20px;
+}
+.product-secundario div {
+    min-width: 90px;
+}
+
 .main-container-beneficios {
     display: flex;
     justify-content: space-around;
@@ -451,6 +493,12 @@ section {
     margin-left: 30px;
 }
 
+/**/
+
+.main-noticias-container {
+    margin-bottom: 50px;
+}
+
 .noticias-title {
     display: flex;
     flex-direction: row;
@@ -524,6 +572,16 @@ section {
         margin-right: 0px;  
     }
 }
+
+@media (max-width: 930px) {
+    .main-container-products {
+        grid-template-columns: 1fr 1fr;
+    }
+    .product-principal {
+        grid-area: 1 / 1 / 4 / 4;
+    }
+}
+
 @media (max-width: 860px) {
     .products-container {
         grid-template-columns: repeat(auto-fit, 200px);
@@ -537,6 +595,12 @@ section {
     .footer-subscribe {
         flex-direction: column;
         height: auto;
+    }
+}
+
+@media (max-width: 790px) {
+    .product-secundario img {
+        width: 150px;
     }
 }
 
@@ -579,6 +643,24 @@ section {
     }
     .main-container-beneficios {
         align-items: center;
+    }
+}
+
+@media (max-width: 530px) {
+    .main-container-products {
+        grid-template-columns: 330px ;
+        grid-template-rows: 130px 130px 130px;
+        place-content: center;
+    }
+    .product-principal {
+        justify-content: space-around;
+        grid-area: 1 / 1 / 1 / 1;
+    }
+    .product-principal img{
+        width: 120px;
+    } 
+    .product-secundario {
+        justify-content: space-around;
     }
 }
 
