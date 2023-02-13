@@ -48,7 +48,6 @@
 .menu-item-search button {
     position: absolute;
     height: 36px;
-
     background-color: #EDA415;
     left: calc(100% - 15px);
 }
@@ -613,12 +612,6 @@ section {
     }
 
     .menu-item-logo {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-    }
-    .menu-item-logo {
         position: absolute;
         flex-direction: column;
 
@@ -633,6 +626,13 @@ section {
 
         transition: transform 0.3s;
         transform: translateY(-100%);
+    }
+    .menu-item-search{
+        margin-left: 25px;
+        
+    }
+    .menu-item-search button {
+        margin-right: 25px;
     }
     .mostrar {
         transform: translateY(60px);
