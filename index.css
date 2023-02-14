@@ -42,6 +42,7 @@
 .menu-item-search input[type="text"]{
     height: 36px;
     padding: 0px 25px;
+    width: 200px;
 }
 
 .menu-item-search button {
